@@ -2,13 +2,15 @@ let txt = "Je suis le ténébreux, - le veuf, - l'inconsolé, \n Le prince d'Aqu
 
 
 let tableau = ["a", "e", "i", "o", "u", "y"]
-let compteurVoyelles = 1;
+let compteurVoyelles = 0;
 
 for (const tab of tableau) {
 
   for (const texte of txt) {
 
-    if (texte === tab) {
+    let mini = texte.toLowerCase();
+
+    if (mini === tab) {
       compteurVoyelles++;
       console.log(compteurVoyelles)
     }
